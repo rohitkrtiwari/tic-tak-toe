@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: #222;
+    font-family: 'Yatra One', cursive;
+    color: wheat;
+    overflow-y: hidden;
+    margin-top: 40px;
+}
+
+.tic-tak-toe{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+#restart{
+    background: none;
+    color: white;
+    outline: none;
+    border: 2px solid #eee;
+    padding: 8px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#restart:hover{
+    color: #222;
+    font-weight: 600;
+    background: #eee;
+}
+
+.gamebody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 28px;
+}
+
+
+.board{
+    min-height: 340px;
+    min-width: 340px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+.cell{
+    border: 2px solid #eee;
+    font-size: 68px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin: 5px;
+    border-radius: 5px;
+    place-items: center;
+    transition: 0.3s;
+    color: #222;
+}
+
+.player1{
+    transition: 0.2s;
+    color: wheat;
+}
+
+.player2{
+    transition: 0.2s;
+    color: chocolate;
+}
+
+.cell.highlight{
+    background-color: rgb(11 46 66);
+}
